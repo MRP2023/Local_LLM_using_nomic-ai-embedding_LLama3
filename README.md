@@ -75,17 +75,11 @@ tesseract --version
 
 ```
 Summary Table:
-Component
-| Used For
-| Setup Command
+Component      | Used For                         | Setup Command
 ---------------|----------------------------------|------------------------------
-ChromaDB
-Ollama
-| Vector DB for embeddings
-| Local LLM (e.g., LLaMA 3)
-| docker run -v ...
-| ollama run llama3
-Tesseract OCR | Image-based PDF text extraction | apt/brew install tesseract
+ChromaDB       | Vector DB for embeddings         | docker run -v ...
+Ollama         | Local LLM (e.g., LLaMA 3)        | ollama run llama3
+Tesseract OCR  | Image-based PDF text extraction  | apt/brew install tesseract
 
 
 
