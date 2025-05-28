@@ -1,0 +1,26 @@
+# Core web app
+streamlit==1.34.0
+
+# LangChain ecosystem
+langchain==0.1.20
+langchain-community==0.0.36
+langchain-core==0.1.50
+
+# Chroma client (talks to Docker-hosted Chroma)
+chromadb==0.4.24
+
+# Embeddings and LLMs
+langchain-ollama==0.1.5
+ollama==0.1.9  # Ollama Python client
+
+# PDF and table parsing
+pdfplumber==0.10.3
+pandas==2.2.2
+
+# OCR and image handling
+pytesseract==0.3.10
+pdf2image==1.17.0
+Pillow==10.3.0
+
+# Optional: If you're using markdown formatting helpers or styling
+markdown==3.5.2

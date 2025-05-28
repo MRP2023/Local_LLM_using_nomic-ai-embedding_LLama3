@@ -45,3 +45,50 @@ pip install -r requirements.txt
 
 # Start the app
 streamlit run app_ocr_table_using_panda.py
+
+
+#Additional System Requirements:
+#1. ChromaDB (Vector Database)
+#Run ChromaDB using Docker:
+docker run -d -v ./chroma-data:/data -p 8000:8000 chromadb/chroma
+#To reset:
+rm -rf ./chroma-data/*
+
+
+```
+2. Ollama (Local LLM Backend)
+Install: https://ollama.com
+
+3. Tesseract OCR (for scanned PDFs)
+```
+#Ubuntu
+sudo apt install tesseract-ocr
+
+#macOS:
+brew install tesseract
+
+#Windows:
+https://github.com/tesseract-ocr/tesseract
+
+#Verify:
+tesseract --version
+
+```
+Summary Table:
+Component
+| Used For
+| Setup Command
+---------------|----------------------------------|------------------------------
+ChromaDB
+Ollama
+| Vector DB for embeddings
+| Local LLM (e.g., LLaMA 3)
+| docker run -v ...
+| ollama run llama3
+Tesseract OCR | Image-based PDF text extraction | apt/brew install tesseract
+
+
+
+
+
+
